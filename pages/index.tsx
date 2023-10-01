@@ -1,26 +1,35 @@
+import SpeedoMeterChart from '../components/SpeedoMeterChart'
 import { Header } from "../components/Header";
-import GaugeChart from "../components/GaugeChart";
+import { Key } from 'react';
 
-
-export default function Home() {
-
+function ChartList({ charts }: any) {
   return (
     <main>
       <Header />
       <div className="p-4 grid md:grid-cols-4 grid-cols-1 gap-4">
-        <GaugeChart/>
-        <GaugeChart/>
-        <GaugeChart/>
-        <GaugeChart/>
-        <GaugeChart/>
-        <GaugeChart/>
-        <GaugeChart/>
-        <GaugeChart/>
-        <GaugeChart/>
-        <GaugeChart/>
-        <GaugeChart/>
-        <GaugeChart/>
+      {charts.map((chart: { id: Key | null | undefined; })=> {
+        return (
+          <div key={chart.id}>
+            <SpeedoMeterChart chart={chart} />
+          </div>
+        )
+      })}
       </div>
     </main>
-  );
+  )
+}
+
+export default ChartList
+
+export async function getStaticProps() {
+    console.log("SERVER SIDE RENDERING");
+  const response = await fetch('http://localhost:4000/charts')
+  const data = await response.json()
+  //   console.log(data)
+
+  return {
+    props: {
+      charts: data
+    }
+  }
 }
