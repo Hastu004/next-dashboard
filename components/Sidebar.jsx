@@ -18,6 +18,11 @@ const Sidebar = ({ children }) => {
               <RxFace size={20} />
             </div>
           </Link>
+          <Link href="/charts">
+            <div className="bg-purple-800 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block">
+              <RxHeartFilled size={20} />
+            </div>
+          </Link>
           <Link href="/health">
             <div className="bg-purple-800 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block">
               <RxBarChart size={20} />

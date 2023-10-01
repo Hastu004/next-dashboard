@@ -1,21 +1,17 @@
+import SpeedoMeterChart from "../components/SpeedoMeterChart";
 import { Header } from "../components/Header";
-import { List, ListItem, Card } from "@material-tailwind/react";
-
+import { Key } from "react";
 
 function ChartList({ charts }: any) {
   return (
     <main>
       <Header />
-      <div className="p-10 grid md:grid-cols-5 grid-cols-1">
-        {charts.map((chart:any) => {
+      <div className="p-4 grid md:grid-cols-4 grid-cols-1 gap-4">
+        {charts.map((chart: { id: Key | null | undefined }) => {
           return (
-             <Card className="w-96">
-             <List>
-               <ListItem className="bg-purple-800">{chart.id}</ListItem>
-               <ListItem>{chart.title}</ListItem>
-               <ListItem>{chart.description}</ListItem>
-             </List>
-           </Card>
+            <div key={chart.id}>
+              <SpeedoMeterChart chart={chart} />
+            </div>
           );
         })}
       </div>
