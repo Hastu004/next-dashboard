@@ -1,6 +1,6 @@
 import { Header } from "../components/Header";
-import BarChart from "../components/BarChart";
-import Speedometer from "../components/Speedometer";
+import GaugeChart from "../components/GaugeChart";
+
 
 export default function Home() {
 
@@ -8,9 +8,18 @@ export default function Home() {
     <main>
       <Header />
       <div className="p-4 grid md:grid-cols-4 grid-cols-1 gap-4">
-        <BarChart />
-        <BarChart />
-        <Speedometer/>
+        <GaugeChart/>
+        <GaugeChart/>
+        <GaugeChart/>
+        <GaugeChart/>
+        <GaugeChart/>
+        <GaugeChart/>
+        <GaugeChart/>
+        <GaugeChart/>
+        <GaugeChart/>
+        <GaugeChart/>
+        <GaugeChart/>
+        <GaugeChart/>
       </div>
     </main>
   );

@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { RxDashboard, RxPerson } from 'react-icons/rx';
-import { FiSettings } from 'react-icons/fi';
+import { RxDashboard, RxPerson, RxHeartFilled } from 'react-icons/rx';
 
 const Sidebar = ({ children }) => {
   return (
@@ -14,14 +13,14 @@ const Sidebar = ({ children }) => {
             </div>
           </Link>
           <span className='border-b-[1px] border-gray-200 w-full p-2'></span>
-          <Link href='/profile'>
+          <Link href='/'>
             <div className='bg-purple-800 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
               <RxPerson size={20} />
             </div>
           </Link>
-          <Link href='/'>
+          <Link href='/health'>
             <div className='bg-purple-800 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-              <FiSettings size={20} />
+              <RxHeartFilled size={20} />
             </div>
           </Link>
         </div>
