@@ -11,34 +11,8 @@ function SpeedoMeterChart({ chart }) {
       <ReactSpeedometer
         value={chart.value}
         currentValueText={chart.title}
-        customSegmentLabels={[
-          {
-            text: "Muy mal",
-            position: "INSIDE",
-            color: "#555",
-          },
-          {
-            text: "Mal",
-            position: "INSIDE",
-            color: "#555",
-          },
-          {
-            text: "Normal",
-            position: "INSIDE",
-            color: "#555",
-            fontSize: "19px",
-          },
-          {
-            text: "Bueno",
-            position: "INSIDE",
-            color: "#555",
-          },
-          {
-            text: "Excelente",
-            position: "INSIDE",
-            color: "#555",
-          },
-        ]}
+        customSegmentLabels={chart.customSegmentLabels}
+        segments={chart.segments}
       />
       <p>{chart.description}</p>
     </div>
