@@ -1,6 +1,25 @@
 {
   "charts": [
     {
+      "id": 10,
+      "title": "Chart 10",
+      "description": "Description 10",
+      "value": 880,
+      "segments": 2,
+      "customSegmentLabels":[
+        {
+          "text": "Vivito",
+          "position": "INSIDE",
+          "color": "green"
+        },
+        {
+          "text": "Q.E.P.D",
+          "position": "INSIDE",
+          "color": "red"
+        }
+      ]
+    },
+    {
       "id": 1,
       "title": "Chart 1",
       "description": "Description 1",
@@ -59,68 +78,27 @@
       "title": "Chart 3",
       "description": "Description 3",
       "value": 450,
-      "segments": 5,
+      "segments": 4,
       "customSegmentLabels":[
         {
           "text": "Muy enfermo",
           "position": "INSIDE",
-          "color": "white"
+          "color": "black"
         },
         {
           "text": "Enfermo",
           "position": "INSIDE",
-          "color": "white"
-        },
-        {
-          "text": "Normal",
-          "position": "INSIDE",
-          "color": "white",
-          "fontSize": "19px"
+          "color": "black"
         },
         {
           "text": "Sano",
           "position": "INSIDE",
-          "color": "white"
+          "color": "orange"
         },
         {
           "text": "Muy Sano",
           "position": "INSIDE",
-          "color": "white"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Chart 4",
-      "description": "Description 4",
-      "value": 350,
-      "segments": 5,
-      "customSegmentLabels":[
-        {
-          "text": "Muy mal",
-          "position": "INSIDE",
-          "color": "white"
-        },
-        {
-          "text": "Mal",
-          "position": "INSIDE",
-          "color": "white"
-        },
-        {
-          "text": "Normal",
-          "position": "INSIDE",
-          "color": "white",
-          "fontSize": "19px"
-        },
-        {
-          "text": "Bueno",
-          "position": "INSIDE",
-          "color": "white"
-        },
-        {
-          "text": "Excelente",
-          "position": "INSIDE",
-          "color": "white"
+          "color": "purple"
         }
       ]
     },
@@ -269,41 +247,6 @@
       "title": "Chart 9",
       "description": "Description 9",
       "value": 700,
-      "segments": 5,
-      "customSegmentLabels":[
-        {
-          "text": "Muy mal",
-          "position": "INSIDE",
-          "color": "white"
-        },
-        {
-          "text": "Mal",
-          "position": "INSIDE",
-          "color": "white"
-        },
-        {
-          "text": "Normal",
-          "position": "INSIDE",
-          "color": "white",
-          "fontSize": "19px"
-        },
-        {
-          "text": "Bueno",
-          "position": "INSIDE",
-          "color": "white"
-        },
-        {
-          "text": "Excelente",
-          "position": "INSIDE",
-          "color": "white"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "title": "Chart 10",
-      "description": "Description 10",
-      "value": 880,
       "segments": 5,
       "customSegmentLabels":[
         {
